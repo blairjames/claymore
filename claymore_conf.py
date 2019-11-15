@@ -1,5 +1,7 @@
+# How often files are checked (seconds)
+frequency = 15
 
-#Directories to monitor
+# Directories to be enumerated and monitored
 dirs = [
             "/bin",
             "/sbin",
@@ -9,8 +11,15 @@ dirs = [
             "/root",
             "/usr",
             "/var",
-            "/lib64"
+            "/lib64",
+            "/lib32",
+            "/lib",
+            "/media",
+            "/srv",
+            "/tmp"
+
         ]
 
+# Directories to explicitly avoid scanning
 whitelist = [
 ]
